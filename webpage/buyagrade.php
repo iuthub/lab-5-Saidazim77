@@ -7,7 +7,6 @@
 	
 	<body>
 		<h1>Buy Your Way to a Better Education!</h1>
-
 		<p>
 			The rough economy, along with recent changes in University of Washington policy, now allow us to offer grades for money.  That's right!  All you need to get a 4.0 in this course is cold, hard, cash.
 		</p>
@@ -15,34 +14,25 @@
 		<hr />
 		
 		<h2>Give Us Your Money</h2>
-		<dl>
-			<dt>Name</dt>
-			<dd>
-				<form action="http://webster.cs.washington.edu/params.php">
+		
+				<form action="http://webster.cs.washington.edu/params.php" method="post" enctype="multipart/form-data">
+					<label for="name">Name:</label>
 					<input type="text" name="name">
 					
-			</dd>
-			
-			<dt>Section</dt>
-			<dd>
-				<select id="section" name="section" >
+		<label for="section">Section:</label>
+				<select name="section" >
 					
-				<option value="(select a section)"></option>
-				<option value="section1">1</option>
-				<option value="section2">2</option>
-				<option value="section3">3</option>
-				<option value="section3">4</option>
+				<option value=""> Choose a section</option>
+				<option value="MA">MA</option>
+				<option value="MH">MH</option>
 				</select>
-			</dd>
-			
-			<dt>Credit Card</dt>
-			<dd>
+		<br>
+		<label for="credit_Card">Credit Card</label>
 				<input type="text" name="credidCard"><br>
                  <input type="radio" name="Visa">
                  <label for="visa">Visa</label>
                    <input type="radio" name="Mastercard">
                  <label for="visa">Master Card</label>
-
 			</dd>
 		</dl>
 		
